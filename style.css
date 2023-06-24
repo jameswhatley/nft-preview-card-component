@@ -126,3 +126,11 @@ footer span:hover {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
 }
+
+@media (max-width: 425px) {
+    .card {
+        width: 90%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
