@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 400px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer img {
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 247, 0);
+}
+
+.imageContainer:hover .overlay {
+  cursor: pointer;
+  opacity: 1;
+  background-color: rgba(0, 255, 247, 0.5);
+}
+
+.overlay img {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textContent h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.textContent > p {
+  margin: 2rem 0;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textContent .ethereum {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+hr {
+  background-color: hsl(215, 32%, 27%);
+  height: 1px;
+  border: none;
+  margin: 2rem 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer img {
+  width: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+footer span {
+  color: #fff;
+}
+
+h1:hover,
+footer span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
